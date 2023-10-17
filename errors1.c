@@ -28,7 +28,7 @@ int _erratoi(char *s)
 /**
  * print_error - prints an err msg
  * @info: return info struct and param
- * @estr: str consisting specified err type
+ * @estr: str of specified err type
  * Return: if no num in string 0, conv num otherwise -1 on err
  */
 void print_error(info_t *info, char *estr)

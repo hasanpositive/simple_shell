@@ -1,9 +1,7 @@
 #include "shell.h"
 /**
- * _myhistory - disp the history list, one cmd by line, further
- * with line numbers, starting at 0.
- * @info: Struct consisting potential args. Used to maintain
- * constant func prototype.
+ * _myhistory - disp the history list, with line numbers starting at 0.
+ * @info: Struct consisting potential args.
  * Return: Always 0
  */
 int _myhistory(info_t *info)
@@ -15,7 +13,7 @@ int _myhistory(info_t *info)
  * unset_alias - sets alias to string
  * @info: param struct
  * @str: the string alias
- * Return: Always 0 on success, 1 on error
+ * Return: on success 0, 1 on error
  */
 int unset_alias(info_t *info, char *str)
 {
@@ -32,12 +30,11 @@ int unset_alias(info_t *info, char *str)
 	*a = s;
 	return (r);
 }
-
 /**
  * set_alias - sets alias to string
  * @info: param struct
  * @str: the string alias
- * Return: Always 0 on success, 1 on error
+ * Return: on success 0, 1 on error
  */
 int set_alias(info_t *info, char *str)
 {
@@ -55,7 +52,7 @@ int set_alias(info_t *info, char *str)
 /**
  * print_alias - prints an alias string
  * @node: the alias node
- * Return: 0 on success, 1 on error
+ * Return: on success 0, 1 on error
  */
 int print_alias(list_t *node)
 {
@@ -74,9 +71,8 @@ int print_alias(list_t *node)
 	return (1);
 }
 /**
- * _myalias - act like the alias builtin (man alias)
- * @info: Struct containing potential args. Used to maintain
- * constant function prototype.
+ * _myalias - act like builtin alias(man alias)
+ * @info: Struct containing potential args.
  * Return: 0 Always
  */
 int _myalias(info_t *info)

@@ -97,7 +97,7 @@ int read_history(info_t *info)
 }
 /**
  * build_history_list - adds entry to a history linked list
- * @info: Struct containing potential args. Used to maintain
+ * @info: Struct og args
  * @buf: buf
  * @linecount: the history linecount, histcount
  * Return: Always 0
@@ -116,7 +116,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 /**
  * renumber_history - renumbers the history linked list after changes
- * @info: Struct consisting potential args Used. 
+ * @info: Struct of args
  * Return: the new histcount
  */
 int renumber_history(info_t *info)

@@ -1,8 +1,7 @@
 #include "shell.h"
 /**
  * get_environ - returns the str arr copy of our environ
- * @info: Struct consisting potential args. Used to maintain
- * constant func prototype.
+ * @info: Struct of args.
  * Return: Always 0
  */
 char **get_environ(info_t *info)
@@ -17,8 +16,7 @@ char **get_environ(info_t *info)
 }
 /**
  * _unsetenv - Remove an env var
- * @info: Struct containing potential args. Used to maintain
- * constant func prototype.
+ * @info: Struct of args.
  * Return: on delete 1, 0 otherwise
  * @var: the string env var property
  */
@@ -48,8 +46,7 @@ int _unsetenv(info_t *info, char *var)
 }
 /**
  * _setenv - Initialize a new env var, or adjust an existing one
- * @info: Struct consisting potential args. Used to maintain
- * constant func prototype.
+ * @info: Struct of args
  * @var: the string env var property
  * @value: the string env var value
  *  Return: Always 0
